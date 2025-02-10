@@ -2,7 +2,7 @@ export default function App() {
   async function getAdvice() {
     const res = await fetch("https://api.getadviceslip.com/advice");
     const data = await res.json();
-    console.log(data);
+    console.log(data.slip.advice);
   }
 
   return (
