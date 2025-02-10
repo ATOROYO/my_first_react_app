@@ -29,7 +29,7 @@ export default function App() {
 function Message(props) {
   return (
     <p>
-      You Have Read <strong>{props.count}</strong> Advices So Far!
+      You Have Read <strong>{props.count}</strong> Advices So Far!!
     </p>
   );
 }
