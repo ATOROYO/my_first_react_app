@@ -21,7 +21,7 @@ export default function App() {
     <div>
       <h1>{advice}</h1>
       <button onClick={getAdvice}>Get Advice</button>
-      <Message />
+      <Message count={count} />
     </div>
   );
 }
