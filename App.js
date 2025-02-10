@@ -13,11 +13,9 @@ export default function App() {
     setCount((c) => c + 1);
   }
 
-  useEffect(function(){
+  useEffect(function () {
     getAdvice();
-  },[])
-
-  }
+  }, []);
 
   return (
     <div>
@@ -27,5 +25,3 @@ export default function App() {
     </div>
   );
 }
-
-
