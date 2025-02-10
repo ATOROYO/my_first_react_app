@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 export default function App() {
+  const [advice, setState] = useState("");
+
   async function getAdvice() {
     const res = await fetch("https://api.getadviceslip.com/advice");
     const data = await res.json();
