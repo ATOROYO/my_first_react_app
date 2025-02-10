@@ -1,6 +1,6 @@
 "use strict";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [advice, setAdvice] = useState("");
@@ -13,6 +13,12 @@ export default function App() {
     setCount((c) => c + 1);
   }
 
+  useEffect(function(){
+    getAdvice();
+  },[])
+
+  }
+
   return (
     <div>
       <h1>{advice}</h1>
@@ -21,3 +27,5 @@ export default function App() {
     </div>
   );
 }
+
+
