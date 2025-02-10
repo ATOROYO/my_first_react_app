@@ -21,10 +21,11 @@ export default function App() {
     <div>
       <h1>{advice}</h1>
       <button onClick={getAdvice}>Get Advice</button>
+      <Message />
     </div>
   );
 }
 
-function Message() {
-  return <p>You have read {count} advices so far</p>;
+function Message(props) {
+  return <p>You have read {props.count} advices so far</p>;
 }
